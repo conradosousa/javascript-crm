@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <div class="flex h-screen relative overflow-hidden">
+        <header class="w-[250px] bg-slate-400 p-4">
+            <h1 class="text-[22] text-white text-center font-bold">Dani Brownies CRM</h1>
+            <nav class="flex flex-col gap-3 mt-4 *:leading-[40px] *:rounded *:pl-4 *:text-white *:duration-200">
+                <a href="" class="hover:bg-white hover:text-yellow-800">Dashboard</a>
+                <a href=""
+                    class="hover:bg-white hover:text-yellow-800 active [&.active]:bg-white [&.active]:text-yellow-800">Clientes</a>
+                <a href="" class="hover:bg-white hover:text-yellow-800">Produtos</a>
+            </nav>
+        </header>
+        <div class="flex-1 p-16">
+            <h2 class="flex justify-between items-center text-[26px] text-yellow-800 font-semibold">
+                Clientes
+                <button onclick="mostrarOverlay()"
+                    class="bg-slate-400 leading-[40px] rounded  text-yellow-800  px-6 text-[12px] uppercase font-bold hover:bg-slate-300 duration-200">Novo
+                    Cliente</button>
+            </h2>
+
+            <div onclick="mostrarOverlay()" id="overlay"
+                class="w-full h-full bg-black/70 absolute top-0 left-0 duration-200 opacity-0 invisible"></div>
+
+            <div id="gaveta"
+                class="min-w-[350px] h-screen bg-white p-4 absolute top-0 -right-full duration-200">
+                <h3 class="flex justify-between items-center">
+                    Cadastro  
+                    <box-icon onclick="mostrarOverlay()" name='x' class="w-[40px] h-[40px] rounded-full bg-slate-400 fill-white p-2 cursor-pointer hover:bg-slate-400 duration-0"></box-icon></h3>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
