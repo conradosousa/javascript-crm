@@ -28,20 +28,75 @@
                     Cliente</button>
             </h2>
 
+            <table class="w-full mt-4 rounded overflow-hidden">
+                <thead class="bg-slate-400 text-yellow-800 *:leading-[40px]">
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Última compra</th>
+                    <th class="w-[100px] flex justify-center gap-4">Ações</th>
+                </thead>
+                <tbody id="tabela" class="[&>*:nth-child(even)]:bg-black/5">
+                    <tr class="*:leading-[40px]">
+                        <td>Conrado Sousa</td>
+                        <td>conradojns@hotmail.com</td>
+                        <td>(85) 996966656</td>
+                        <td>05/05/2025</td>
+                        <td class="w-[100px] flex justify-center gap-4">
+                            <box-icon name="pencil"></box-icon>
+                            <box-icon name="trash"></box-icon>
+                        </td>
+                    </tr>
+                    <tr class="*:leading-[40px]">
+                        <td>Conrado Sousa</td>
+                        <td>conradojns@hotmail.com</td>
+                        <td>(85) 996966656</td>
+                        <td>05/05/2025</td>
+                        <td  class="w-[100px] flex justify-center gap-4">
+                            <box-icon name="pencil"></box-icon>
+                            <box-icon name="trash"></box-icon>
+                        </td>
+                    </tr>
+
+                    <tr class="*:leading-[40px]">
+                        <td>Conrado Sousa</td>
+                        <td>conradojns@hotmail.com</td>
+                        <td>(85) 996966656</td>
+                        <td>05/05/2025</td>
+                        <td class="w-[100px] flex justify-center gap-4">
+                            <box-icon name="pencil"></box-icon>
+                            <box-icon name="trash"></box-icon>
+                        </td>
+                    </tr>
+                    <tr class="*:leading-[40px]">
+                        <td>Conrado Sousa</td>
+                        <td>conradojns@hotmail.com</td>
+                        <td>(85) 996966656</td>
+                        <td>05/05/2025</td>
+                        <td  class="w-[100px] flex justify-center gap-4">
+                            <box-icon name="pencil"></box-icon>
+                            <box-icon name="trash"></box-icon>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
             <div onclick="mostrarOverlay()" id="overlay"
                 class="w-full h-full bg-black/70 absolute top-0 left-0 duration-200 opacity-0 invisible"></div>
 
-            <div id="gaveta"
-                class="min-w-[350px] h-screen bg-white p-4 absolute top-0 -right-full duration-200">
+            <div id="gaveta" class="min-w-[350px] h-screen bg-white p-4 absolute top-0 -right-full duration-200">
                 <h3 class="flex justify-between items-center">
-                    Cadastro  
-                    <box-icon onclick="mostrarOverlay()" name='x' class="w-[40px] h-[40px] rounded-full bg-slate-400 fill-white p-2 cursor-pointer hover:bg-slate-400 duration-0"></box-icon></h3>
+                    Cadastro
+                    <box-icon onclick="mostrarOverlay()" name='x'
+                        class="w-[40px] h-[40px] rounded-full bg-slate-400 fill-white p-2 cursor-pointer hover:bg-slate-400 duration-0"></box-icon>
+                </h3>
 
             </div>
         </div>
     </div>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="index.js"></script>
+    <script src="clientes.js"></script>
 </body>
 
 </html>
