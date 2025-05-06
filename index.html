@@ -37,47 +37,8 @@
                     <th class="w-[100px] flex justify-center gap-4">Ações</th>
                 </thead>
                 <tbody id="tabela" class="[&>*:nth-child(even)]:bg-black/5">
-                    <tr class="*:leading-[40px]">
-                        <td>Conrado Sousa</td>
-                        <td>conradojns@hotmail.com</td>
-                        <td>(85) 996966656</td>
-                        <td>05/05/2025</td>
-                        <td class="w-[100px] flex justify-center gap-4">
-                            <box-icon name="pencil"></box-icon>
-                            <box-icon name="trash"></box-icon>
-                        </td>
-                    </tr>
-                    <tr class="*:leading-[40px]">
-                        <td>Conrado Sousa</td>
-                        <td>conradojns@hotmail.com</td>
-                        <td>(85) 996966656</td>
-                        <td>05/05/2025</td>
-                        <td  class="w-[100px] flex justify-center gap-4">
-                            <box-icon name="pencil"></box-icon>
-                            <box-icon name="trash"></box-icon>
-                        </td>
-                    </tr>
 
-                    <tr class="*:leading-[40px]">
-                        <td>Conrado Sousa</td>
-                        <td>conradojns@hotmail.com</td>
-                        <td>(85) 996966656</td>
-                        <td>05/05/2025</td>
-                        <td class="w-[100px] flex justify-center gap-4">
-                            <box-icon name="pencil"></box-icon>
-                            <box-icon name="trash"></box-icon>
-                        </td>
-                    </tr>
-                    <tr class="*:leading-[40px]">
-                        <td>Conrado Sousa</td>
-                        <td>conradojns@hotmail.com</td>
-                        <td>(85) 996966656</td>
-                        <td>05/05/2025</td>
-                        <td  class="w-[100px] flex justify-center gap-4">
-                            <box-icon name="pencil"></box-icon>
-                            <box-icon name="trash"></box-icon>
-                        </td>
-                    </tr>
+
                 </tbody>
             </table>
 
@@ -90,6 +51,31 @@
                     <box-icon onclick="mostrarOverlay()" name='x'
                         class="w-[40px] h-[40px] rounded-full bg-slate-400 fill-white p-2 cursor-pointer hover:bg-slate-400 duration-0"></box-icon>
                 </h3>
+                <form id="formCriar" onsubmit="cadastrarCliente(event.target)">
+                    <label for="" class="block mb-2">Nome</label>
+                    <input name="nome" type="text"
+                        class="w-full h-[40px] rounded border focus:outline-yellow-600 mb-3 pl-3"
+                        placeholder="Digite seu nome" required>
+
+                    <label for="" class="block mb-2">Email</label>
+                    <input name="email" type="email"
+                        class="w-full h-[40px] rounded border focus:outline-yellow-600 mb-3 pl-3"
+                        placeholder="Digite seu email" required>
+
+                    <label for="" class="block mb-2">Telefone</label>
+                    <input name="telefone" type="text"
+                        class="w-full h-[40px] rounded border focus:outline-yellow-600 mb-3 pl-3"
+                        placeholder="(00) 00000-0000" required>
+
+                    <label for="" class="block mb-2">Última compra</label>
+                    <input name="data" type="text"
+                        class="w-full h-[40px] rounded border focus:outline-yellow-600 mb-3 pl-3"
+                        placeholder="00/00/0000" required>
+
+                    <button
+                        class=" w-full bg-slate-400 leading-[40px] rounded  text-yellow-800  px-6 text-[12px] uppercase font-bold hover:bg-slate-300 duration-200"
+                        type="submit">Criar</button>
+                </form>
 
             </div>
         </div>
